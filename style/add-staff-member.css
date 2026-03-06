@@ -1,0 +1,135 @@
+.staff-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  .staff-header h1 {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .staff-header h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .staff-header p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .staff-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .staff-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  .staff-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #ddd;
+    margin-right: 15px;
+  }
+  
+  .staff-info {
+    flex: 1;
+  }
+  
+  .staff-name {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .staff-role {
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .delete-btn {
+    border: none;
+    background: transparent;
+    color: #888;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    color: red;
+  }
+  
+  .staff-info-link {
+    font-size: 12px;
+    color: #FF8C00;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .staff-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .add-btn, .continue-btn {
+    background: #FF8C00;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover, .continue-btn:hover {
+    background: #e67600;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .avatar-preview {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  

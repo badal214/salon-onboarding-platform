@@ -1,0 +1,76 @@
+.otp-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    font-size: 20px;
+    cursor: pointer;
+    color: #943f06;
+    margin-right: 6px;
+  }
+  
+  .form-wrapper {
+    margin-top: 1rem;
+  }
+  
+  .signup-logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .brand-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .otp-inputs input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .timer {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .change {
+    color: #d28647;
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    background-color: #d28647;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+  }
+  

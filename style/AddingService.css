@@ -1,0 +1,164 @@
+.adding-service-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.back-icon {
+  font-size: 24px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #4a4a4a;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #222;
+}
+
+.image-upload-container {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.image-upload-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-upload-box.has-image {
+  border: 2px solid #4CAF50;
+  padding: 0;
+  overflow: hidden;
+}
+
+.image-upload-box:hover {
+  border-color: #4CAF50;
+  background-color: #f9f9f9;
+}
+
+.upload-icon {
+  font-size: 32px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.image-upload-box p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label,
+.duration-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.duration-group {
+  margin-bottom: 20px;
+}
+
+.duration-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.duration-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.duration-field input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.duration-field span {
+  font-size: 13px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.duration-field input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.checkbox-group {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #4CAF50;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}

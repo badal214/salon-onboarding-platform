@@ -1,0 +1,104 @@
+.otp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .otp-header-wrapper {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+  }
+  
+  .otp-branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .otp-logo {
+    width: 30px;
+    height: auto;
+  }
+  
+  .otp-brand-text {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  /* Existing styles for otp-header, boxes, inputs, etc */
+  .otp-content {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .otp-header h2 {
+    margin: 10px 0 5px;
+  }
+  
+  .otp-header p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .otp-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .otp-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .otp-verify {
+    margin-top: 15px;
+    padding: 10px 30px;
+    background-color: #d17b2e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .error-message {
+  color: #ef4444;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.countdown {
+  color: #6b7280;
+}
+
+.resend-btn {
+  background: none;
+  border: none;
+  color: #f97316;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.resend-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.resend-option {
+  margin-bottom: 15px;
+  font-size: 14px;
+}

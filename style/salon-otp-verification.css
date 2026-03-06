@@ -1,0 +1,939 @@
+/* Main Container */
+.salon-otp-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Styles */
+  .salon-otp-header {
+    margin-bottom: 2rem;
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Branding Styles */
+  .salon-brand {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .salon-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .salon-brand h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Content Styles */
+  .salon-otp-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .salon-otp-content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .email-display {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  .change-email {
+    color: #4CAF50;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  
+  /* OTP Input Styles */
+  .otp-input-group {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .otp-input-group input {
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .otp-input-group input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+  }
+  
+  /* Button Styles */
+  .verify-otp-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .verify-otp-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Resend Styles */
+  .resend-otp {
+    color: #666;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .resend-link {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    text-decoration: underline;
+  }
+
+  /* Add to salon-otp-verification.css */
+.business-types-container {
+    margin: 30px 0;
+    width: 100%;
+  }
+  
+  .business-type-option {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .business-type-option input[type="checkbox"] {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    accent-color: #000; /* For modern browsers */
+  }
+  
+  .business-type-option label {
+    font-size: 16px;
+    cursor: pointer;
+    flex-grow: 1;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
+    width: 100%;
+  }
+  
+  .verify-otp-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  /* Add these styles to your existing CSS */
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.upload-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.upload-area p {
+  margin-bottom: 10px;
+}
+
+.browse-btn {
+  background-color: #f0f0f0;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.gender-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.gender-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gender-btn.selected {
+  background-color: #6c63ff;
+  color: white;
+  border-color: #6c63ff;
+}
+
+.about-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 100px;
+  resize: vertical;
+}
+/* Location Selection Styles */
+.location-options {
+  margin: 25px 0;
+}
+
+.location-option {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.location-option.selected {
+  border-color: #6c63ff;
+  background-color: rgba(108, 99, 255, 0.05);
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.radio-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.radio-circle.selected {
+  border-color: #6c63ff;
+}
+
+.radio-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #6c63ff;
+  border-radius: 50%;
+}
+
+.option-description {
+  color: #666;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+/* Disabled button style */
+.verify-otp-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Service type badge */
+.service-type-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.service-type-badge.business {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.service-type-badge.client {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+/* Additional textarea */
+.about-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+/* Country Select Styles */
+.country-select {
+  margin-bottom: 15px;
+}
+
+.select__control {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-height: 44px;
+}
+
+.select__control--is-focused {
+  border-color: #6c63ff !important;
+  box-shadow: 0 0 0 1px #6c63ff !important;
+}
+
+.select__menu {
+  z-index: 10;
+}
+
+/* Error state */
+.select__control.error {
+  border-color: #ff6b6b !important;
+}
+
+/* Service type badge */
+.service-type-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.service-type-badge.business {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.service-type-badge.client {
+  background-color: #ff6b6b;
+  color: white;
+}
+/* Address Page Specific Styles */
+.address-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 15px 0;
+  color: #666;
+  font-weight: bold;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.country-select {
+  margin-bottom: 15px;
+}
+
+.select__control {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-height: 44px;
+}
+
+.select__menu {
+  z-index: 10;
+}
+
+.verify-otp-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.verify-otp-btn:hover {
+  background-color: #5a52d6;
+}
+
+/* Salon Business Hours Styles */
+.business-hours-table {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.business-hours-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.day-column {
+  flex: 1;
+  text-align: left;
+}
+
+.day-name {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.hours-column {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sleep-emoji {
+  font-size: 18px;
+}
+
+.time-display {
+  padding: 6px 10px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.closed-text {
+  color: #ff6b6b;
+}
+
+.toggle-day-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 60px;
+}
+
+.toggle-day-btn.open {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.toggle-day-btn.closed {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+/* Business Hours Styles */
+.business-hours-list {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.business-hours-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.day-toggle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.day-name {
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.time-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 90px;
+  text-align: center;
+}
+
+.closed-text {
+  color: #888;
+}
+
+.edit-icon {
+  color: #666;
+  cursor: pointer;
+}
+
+/* Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #6c63ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Add Services Page Styles */
+.services-list {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.service-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.service-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.service-details {
+  display: flex;
+  gap: 20px;
+  color: #666;
+}
+
+.add-service-form {
+  margin: 25px 0;
+}
+
+.add-service-form h3 {
+  color: #6c63ff;
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.add-service-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-service-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+/* Enhanced Services List Styles */
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.service-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+.edit-btn:hover {
+  color: #6c63ff;
+}
+
+.delete-btn {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  color: #ff6b6b;
+}
+
+.edit-service-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.save-btn, .cancel-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.save-btn {
+  color: #4CAF50;
+}
+
+.cancel-btn {
+  color: #ff6b6b;
+}
+
+.add-service-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* Table Styles */
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+.services-table th, 
+.services-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.services-table th {
+  font-weight: 600;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.action-cell {
+  text-align: center;
+}
+
+.table-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.table-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 2px;
+}
+
+.table-btn.edit {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.table-btn.save {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.table-btn.cancel {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+/* Add Service Section */
+.add-service-section {
+  margin: 25px 0;
+}
+
+.add-service-section h3 {
+  color: #6c63ff;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.add-service-form {
+  display: flex;
+  gap: 10px;
+}
+
+.add-service-form input {
+  flex: 1;
+}
+
+.add-service-btn {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-service-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+/* Salon Add Services Details Styles */
+.image-upload-container {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.image-upload-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-upload-box.has-image {
+  border: 2px solid #6c63ff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.image-upload-box:hover {
+  border-color: #6c63ff;
+  background-color: #f9f9f9;
+}
+
+.upload-icon {
+  font-size: 32px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.image-upload-box p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.duration-group {
+  margin-bottom: 20px;
+}
+
+.duration-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.duration-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.duration-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.duration-field span {
+  font-size: 13px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.checkbox-group {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #6c63ff;
+}
+
+.service-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.service-input:focus {
+  outline: none;
+  border-color: #6c63ff;
+}

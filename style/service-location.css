@@ -1,0 +1,94 @@
+.service-location-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  padding: 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.option-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.option-container:hover,
+.option-container.selected {
+  border-color: #f39c12;
+  background-color: #fffaf0;
+}
+
+.option-container label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.option-container input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #f39c12;
+}
+
+.option-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+  padding-left: 28px;
+}
+
+.continue-btn {
+  width: 100%;
+  background-color: #d27c2c;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.continue-btn:hover {
+  background-color: #b06523;
+}
+
+.continue-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+  
+      
+  

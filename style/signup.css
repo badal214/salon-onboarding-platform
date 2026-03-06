@@ -1,0 +1,128 @@
+/* Page Container */
+.signup-page {
+  display: flex;
+  height: 100vh;
+  background-color: #be7612;
+}
+
+/* Left Side - Image */
+.signup-image {
+  flex: 1; /* LESS space now */
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(233, 218, 218, 0.4);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Right Side - Signup Box */
+.signup-box {
+  flex: 2; /* MORE space now */
+  padding: 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.signup-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.signup-option {
+  width: 90%;
+  max-width: 500px;
+  background-color: #e9d7b0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.signup-option:hover {
+  background-color: #e8f8a1;
+}
+
+.signup-option h3 {
+  margin: 0;
+  color: #222;
+}
+
+.signup-option p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Logo inside form */
+.signup-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Sign In Text */
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-link span {
+  color: #c41313;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+.footer a {
+  color: #c41313;
+  text-decoration: none;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  color: #160101;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+  transform: translateX(-3px);
+}
+
+

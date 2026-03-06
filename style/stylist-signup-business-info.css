@@ -1,0 +1,84 @@
+.business-info-container {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .header-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .business-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .upload-section label {
+    font-weight: 600;
+  }
+  
+  .upload-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .large-upload {
+    height: 150px;
+    position: relative;
+  }
+  
+  .large-upload button {
+    margin-top: 10px;
+  }
+  
+  .small-upload {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .small-upload span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .checkbox-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .textarea-section textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .continue-btn {
+    background-color: #F4A950;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .required-star {
+    color: red;
+    margin-left: 4px;
+    font-size: 18px;
+  }
+  
+  

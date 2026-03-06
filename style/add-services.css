@@ -1,0 +1,96 @@
+.add-services-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .back-icon {
+    font-size: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .services-list {
+    margin-bottom: 30px;
+  }
+  
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .service-info {
+    flex-grow: 1;
+  }
+  
+  .service-name {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .service-duration,
+  .service-price {
+    display: inline-block;
+    margin-right: 15px;
+    color: #666;
+  }
+  
+  .edit-btn, .save-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .service-edit-form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .service-edit-form input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .add-service-btn {
+    background: none;
+    border: 1px dashed #666;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .continue-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
